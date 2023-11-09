@@ -11,9 +11,9 @@ cd /app
 npm install
 
 dnf install mongodb-org-shell -y
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/user.js
+mongo --host mongodb.nkdevops29.online </app/schema/user.js
 systemctl daemon-reload
 systemctl enable user
-systemctl start user
+systemctl restart user
 
 
